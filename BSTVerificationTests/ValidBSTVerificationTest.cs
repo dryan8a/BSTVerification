@@ -16,7 +16,7 @@ namespace BSTVerificationTests
         [InlineData("1")]
         public void ValidBSTVerifiesTest(string tree)
         {
-            var head = TestHelperFunctions.ParseTree<int>(tree);
+            var head = TestHelperFunctions.ParseIntTree(tree);
             var actualResult = BSTVerificator.IsValidBST(head);
             Assert.True(actualResult);
         }
