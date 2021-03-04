@@ -2,6 +2,7 @@
 
 namespace BSTVerification
 {
+    //Given node class
     public class Node<T>
     {
         public T Value {get; set;}

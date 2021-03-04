@@ -13,6 +13,8 @@ namespace BSTVerificationTests
         [InlineData("2(1,3)")]
         [InlineData("2(1(0, ),3( ,4))")]
         [InlineData("1( ,2( ,3( ,4)))")]
+        [InlineData("1( ,2( ,5(4(3, ), )))")]
+        [InlineData("1( ,3(2,4( ,5)))")]
         [InlineData("1")]
         public void ValidBSTVerifiesTest(string tree)
         {
